@@ -125,7 +125,7 @@ except ImportError:
 
 if DEBUG == False:
     DATABASES['default'] =  dj_database_url.config()
-    DOMAIN = "http://slackbk.herokuapp.com"
+    DOMAIN = "http://ploneslackback.herokuapp.com"
     SLACK_CLIENT_ID = os.getenv('SLACK_CLIENT_ID', '')
     SLACK_CLIENT_SECRET =  os.getenv('SLACK_CLIENT_SECRET', '')
 
